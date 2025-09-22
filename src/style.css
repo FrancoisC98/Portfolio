@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Meow+Script&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  list-style: none;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px; /* facultatif si tu veux limiter la largeur sur grand écran */
+  margin: 0 auto;    /* centre les sections */
+  padding: 2rem;     /* espace autour du contenu */
+}
+
+
+body {
+  background-color: #1f1c2c;
+  color: #928DAB;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* HERO / HEADER */
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  flex-wrap: wrap; /* pour mobile */
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-image {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid #928DAB; /* Ton cercle de couleur */
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajout du halo flou derrière */
+.hero-image::before {
+  content: '';
+  position: absolute;
+  top: 50px; /* Remonte un peu vers le haut */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background: #928DAB; /* Même couleur que ton cercle */
+  border-radius: 50%;
+  filter: blur(100px); /* Intensité du flou */
+  z-index: 0;
+}
+
+
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.8rem;
+  background-color: #928DAB;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #ff2e1f;
+  transform: translateY(-3px);
+}
+
+
+/* GRILLE PROJETS */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* CARTES PROJETS */
+
+#projects {
+  text-align: center;
+}
+
+.project-card {
+  background-color: #1f1c2c;
+  color: #928DAB;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #928DAB; /* glow rouge vif */
+  border: 2px solid #928DAB;    /* optionnel : contour rouge */
+}
+
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* BOUTONS */
+
+.project-card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #928DAB;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+  background-color: #ff2e1f;
+}
+
+/* Transition globale */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f1c2c;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.name h1 {
+  font-size: 2.5rem;
+  font-family: 'Meow Script', cursive;
+  margin: 0;
+  color: #ddd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #928DAB;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff2e1f;
+}
+
+/* SKILLS */
+
+.skills, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.skill-card {
+  background-color: #1f1c2c;
+  color: #928DAB;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #928DAB;
+  border: 2px solid #928DAB;
+}
+
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #928DAB;
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  margin-bottom: 0.5rem;
+  color: #928DAB;
+}
+
+/* Quote Section */
+.quote-section {
+  color: #fff;
+  font-family: 'Meow Script', cursive;
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.quote-section::before {
+  font-size: 6rem;
+  color: #928DAB;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  opacity: 0.3;
+  font-family: 'Meow Script', cursive;
+  pointer-events: none;
+}
+
+.quote-section .quote-text {
+  font-size: 2.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  text-shadow: 0 2px 8px #23294688;
+}
+
+
+/* CONTACT */
+
+.contact a {
+  color: #928DAB;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-icons a {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+}
+
+.contact-section {
+  padding: 60px 20px;
+  background: #1f1c2c;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: white;
+  border-color: #928DAB;
+  background-color: #2c2a3a;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-submit {
+  background-color: #928DAB;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #ff5e57;
+}
