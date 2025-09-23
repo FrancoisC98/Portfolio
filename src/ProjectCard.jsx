@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 
-function ProjectCard({ title, description, image, slug }) {
+function ProjectCard({ id, title, description }) {
   return (
     <div className="project-card">
-      <img src={image} alt={title} className="project-image" />
       <h3>{title}</h3>
       <p>{description}</p>
-      <Link to={`/projects/${slug}`}>
+      <Link to={`/projects/${id}`}>
         <button>Voir plus</button>
       </Link>
     </div>

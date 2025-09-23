@@ -11,7 +11,23 @@ function ProjectDetails({ projects }) {
   return (
     <div className="project-details">
       <h1>{project.title}</h1>
-      <img src={project.image} alt={project.title} />
+      {Array.isArray(project.image)
+        ? project.image.map((img, idx) => (
+            <img
+              key={idx}
+              src={img}
+              alt={`${project.title} screenshot ${idx + 1}`}
+              className="project-image-large"
+            />
+          ))
+        : (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image-large"
+            />
+          )
+      }
       <p>{project.description}</p>
       <p>{project.details}</p>
     </div>

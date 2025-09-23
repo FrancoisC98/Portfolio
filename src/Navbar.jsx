@@ -1,4 +1,6 @@
 import Logo from './assets/images/LOGO.png';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   return (
@@ -7,10 +9,10 @@ function Navbar() {
         <h1>François</h1>
       </div>
       <ul className="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><Link to="/">Accueil</Link></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   );
