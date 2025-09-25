@@ -10,8 +10,7 @@ function Contact() {
     message: "",
   });
 
-  const [status, setStatus] = useState(""); // ✅ message de retour
-
+  const [status, setStatus] = useState(""); 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -20,14 +19,14 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  emailjs.send("service_1def81m","template_mbyzwk8",
+  emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
         title: "Nouveau message depuis le site",
         name: `${formData.firstName} ${formData.lastName}`,
         time: new Date().toLocaleString(),
         message: formData.message
         },
-        "pWCYVm061lMFqox7J" 
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
