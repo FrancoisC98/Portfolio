@@ -7,7 +7,14 @@ import bookImg5 from './assets/images/sophiebluel2.png';
 import bookImg6 from './assets/images/sophiebluel3.png';
 import bookImg7 from './assets/images/mvg1.png';
 import bookImg8 from './assets/images/mvg2.png';
-import bookImg9 from './assets/images/mvg2.png';
+import bookImg9 from './assets/images/mvg3.png';
+import bookImg10 from './assets/images/ninacarducci1.png';
+import bookImg11 from './assets/images/ninacarducci2.png';
+import bookImg12 from './assets/images/menumaker.png';
+import bookImg13 from './assets/images/menumaker1.png';
+import bookImg14 from './assets/images/menumaker2.png';
+import bookImg15 from './assets/images/menumaker3.png';
+import bookImg16 from './assets/images/menumaker4.png';
 
 
 
@@ -39,6 +46,20 @@ const projects = [
     description: "Création d'une page web dynamique en JavaScript.",
     image: [bookImg4, bookImg5, bookImg6],
     details: "Gestion dynamique du DOM et interactions utilisateurs."
+  },
+  {
+    id: 5,
+    title: "Nina Carducci",
+    description: "Debuggez et optimisez un site de photographe.",
+    image: [bookImg10, bookImg11],
+    details: "Optimisation des performances, accessibilité, SEO et bonne pratique de code."
+  },
+  {
+    id: 6,
+    title: "MenuMaker",
+    description: "Planifier le développement du site de votre client",
+    image: [bookImg12, bookImg13, bookImg14, bookImg15, bookImg16],
+    details: "Création de de document technique, kanban ainsi qu'une veille technologique pour un site de restaurant."
   }
 ];
 

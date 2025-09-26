@@ -4,7 +4,7 @@ export default function QuoteSection() {
     <section className="quote-section">
       <div className="quote-text">
         <p>
-          "Le code, c’est comme l’art : chaque ligne raconte une histoire."
+          « Je transforme les bugs en leçons et les idées en applications. »
         </p>
       </div>
     </section>
