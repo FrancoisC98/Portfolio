@@ -145,8 +145,8 @@ body {
 
 .back-arrow {
   position: absolute;
-  top: 1.5rem;
-  left: -11rem;
+  top: 20px;
+  left: 20px;
   background: none;
   border: none;
   color: #232946;
@@ -507,6 +507,11 @@ textarea {
 
   .hero-text {
     font-size: 1.2rem;
+  }
+  .back-arrow {
+    font-size: 0.8rem;
+    top: 10px;
+    left: 10px;
   }
 }
 
