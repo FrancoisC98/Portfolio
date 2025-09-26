@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function ProjectDetails({ projects }) {
   const { id } = useParams();
+  const navigate = useNavigate();
   const project = projects.find((proj) => proj.id.toString() === id);
 
   if (!project) {
@@ -10,7 +12,10 @@ function ProjectDetails({ projects }) {
 
   return (
     <div className="project-details">
+      <button className="back-arrow" onClick={() => navigate("/")} aria-label="Retour à l'accueil">&#8592; Accueil</button>
       <h1>{project.title}</h1>
+      <p>{project.description}</p>
+      <p>{project.details}</p>
       {Array.isArray(project.image)
         ? project.image.map((img, idx) => (
             <img
@@ -28,8 +33,6 @@ function ProjectDetails({ projects }) {
             />
           )
       }
-      <p>{project.description}</p>
-      <p>{project.details}</p>
     </div>
   );
 }

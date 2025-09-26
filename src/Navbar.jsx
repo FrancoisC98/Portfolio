@@ -13,7 +13,7 @@ function Navbar() {
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#projects">Projets</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#cv.pdf" download="CV.pdf">Mon CV</a></li>
+      <li><a href="/Portfolio/cv.pdf" download="CV-Francois.pdf">Mon CV</a></li>
      </ul>
     </nav>
   );
