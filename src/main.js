@@ -1,4 +1,4 @@
 // src/main.js
-import { projects } from './projectData.js';
+import { projects } from './projectsData.js';
 
 console.log(projects);
