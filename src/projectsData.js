@@ -1,15 +1,18 @@
 import bookImg from './assets/images/booki.png';
-import bookImg1 from './assets/images/Kasa1.png';
-import bookImg2 from './assets/images/Kasa2.png';
-import bookImg3 from './assets/images/Kasa3.png';
+import bookImg18 from './assets/images/booki2.jpg';
+import bookImg19 from './assets/images/booki3.jpg';
+import bookImg1 from './assets/images/Kasa1.1.png';
+import bookImg2 from './assets/images/Kasa1.2.png';
+import bookImg3 from './assets/images/Kasa1.3.png';
 import bookImg4 from './assets/images/sophiebluel1.png';
 import bookImg5 from './assets/images/sophiebluel2.png';
 import bookImg6 from './assets/images/sophiebluel3.png';
-import bookImg7 from './assets/images/mvg1.png';
-import bookImg8 from './assets/images/mvg2.png';
-import bookImg9 from './assets/images/mvg3.png';
+import bookImg7 from './assets/images/mvg1.1.png';
+import bookImg8 from './assets/images/mvg1.2.png';
+import bookImg9 from './assets/images/mvg1.3.png';
 import bookImg10 from './assets/images/ninacarducci1.png';
-import bookImg11 from './assets/images/ninacarducci2.png';
+import bookImg11 from './assets/images/ninacarducci1.2.png';
+import bookImg17 from './assets/images/ninacarducci1.1.png';
 import bookImg12 from './assets/images/menumaker.png';
 import bookImg13 from './assets/images/menumaker1.png';
 import bookImg14 from './assets/images/menumaker2.png';
@@ -23,7 +26,7 @@ const projects = [
     id: 1,
     title: "Booki",
     description: "Création d'un site de réservation d'hôtels en HTML et CSS.",
-    image: bookImg,
+    image: [bookImg, bookImg18, bookImg19],
     details: "Projet réalisé en HTML/CSS à partir d'une maquette Figma, 100% responsive."
   },
   {
@@ -38,7 +41,7 @@ const projects = [
     title: "Mon Vieux Grimoire",
     description: "Développement du back-end d'un site de notation de livres.",
     image: [bookImg7, bookImg8, bookImg9],
-    details: "API avec Node.js, Express et MongoDB (CRUD complet)."
+    details: "API avec Node.js, Express et MongoDB (CRUD complet).",
   },
   {
     id: 4,
@@ -51,7 +54,7 @@ const projects = [
     id: 5,
     title: "Nina Carducci",
     description: "Debuggez et optimisez un site de photographe.",
-    image: [bookImg10, bookImg11],
+    image: [bookImg10, bookImg11, bookImg17],
     details: "Optimisation des performances, accessibilité, SEO et bonne pratique de code."
   },
   {
