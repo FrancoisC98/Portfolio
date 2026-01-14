@@ -18,6 +18,13 @@ import bookImg13 from './assets/images/menumaker1.png';
 import bookImg14 from './assets/images/menumaker2.png';
 import bookImg15 from './assets/images/menumaker3.png';
 import bookImg16 from './assets/images/menumaker4.png';
+import bookImg20 from './assets/images/guess1.png';
+import bookImg21 from './assets/images/guess2.png';
+import bookImg22 from './assets/images/guess3.png'; 
+import bookImg23 from './assets/images/or1.png';
+import bookImg24 from './assets/images/or2.png';
+import bookImg25 from './assets/images/or3.png';
+import bookImg26 from './assets/images/or4.png';
 
 
 
@@ -63,6 +70,21 @@ const projects = [
     description: "Planifier le développement du site de votre client",
     image: [bookImg12, bookImg13, bookImg14, bookImg15, bookImg16],
     details: "Création de de document technique, kanban ainsi qu'une veille technologique pour un site de restaurant."
+  }  
+  ,{
+    id: 7,
+    title: "Guess The Flag",
+    description: "Application de quiz sur les drapeaux du monde.",
+    image: [bookImg20, bookImg21, bookImg22],
+    details: "Conception d'une application interactive pour tester les connaissances géographiques des utilisateurs."
+  }
+
+  ,{
+    id: 8,
+    title: "Dragon D'or",
+    description: "Site vitrine pour un restaurant asiatique.",
+    image: [bookImg23, bookImg24, bookImg25, bookImg26],
+    details: "Développement d'un site web attrayant pour promouvoir les services et le menu d'un restaurant asiatique."
   }
 ];
 

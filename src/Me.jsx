@@ -5,8 +5,8 @@ function Presentation() {
     <section id="home" className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1>Développeur Full-Stack</h1>
-          <p>François, développeur Full-Stack en devenir ⚡</p>
+          <h1>Développeur Web</h1>
+          <p>François, développeur web passionné par la création d'interface claires, efficaces et modernes. ⚡</p>
           <a href="#projects" className="hero-btn">Voir mes projets</a>
         </div>
         <div className="hero-image">

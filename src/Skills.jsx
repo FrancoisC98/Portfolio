@@ -5,7 +5,7 @@ function Skills() {
   const skillsData = [
     {
       title: "Front-end",
-      skills: ["React", "Vue", "HTML", "CSS", "JavaScript"],
+      skills: ["React","Angular", "Vue", "HTML", "CSS", "JavaScript"],
       icon: "</>"
     },
     {
