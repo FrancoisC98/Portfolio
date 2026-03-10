@@ -17,9 +17,9 @@ html, body {
 
 section {
   width: 100%;
-  max-width: 1200px; /* facultatif si tu veux limiter la largeur sur grand écran */
-  margin: 0 auto;    /* centre les sections */
-  padding: 2rem;     /* espace autour du contenu */
+  max-width: 1200px; 
+  margin: 0 auto;  
+  padding: 2rem; 
 }
 
 
@@ -38,7 +38,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
-  flex-wrap: wrap; /* pour mobile */
+  flex-wrap: wrap; 
 }
 
 .hero-text {
@@ -113,8 +113,7 @@ body {
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 0 20px #1D3C45; /* glow rouge vif */
-  border: 2px solid #1D3C45;    /* optionnel : contour rouge */
+  box-shadow: 0 0 20px #1D3C45;
 }
 
 
@@ -304,7 +303,6 @@ body {
 .skill-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 0 20px #1D3C45;
-  border: 2px solid #1D3C45;
 }
 
 
