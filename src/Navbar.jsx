@@ -23,7 +23,7 @@ function Navbar() {
       <li><a href="#projects">Projets</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <a href="/cv-francois.pdf" download>
+        <a href="/cv-combaud.pdf" download>
           Mon CV
         </a>
       </li>

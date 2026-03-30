@@ -10,7 +10,7 @@ function Skills() {
     },
     {
       title: "Back-end",
-      skills: ["Node.js", "Express", "MongoDB", "APIs"],
+      skills: ["Node.js", "Express", "MongoDB", "APIs", "SQL", "Python", "Java"],
       icon: "🛠️"
     }
   ];
